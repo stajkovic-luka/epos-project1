@@ -1,1 +1,2 @@
-# Prvi domaci iz "Elektronskog poslovanja"
+# Projekat iz "Elektronskog poslovanja"
+Projekat radjen uz primenu HTML, CSS, JS
