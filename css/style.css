@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+
+/* TRAKA ZA NAVIGACIJU */
+.nav-linkovi a {
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: #bc6c25;
+
+}
+
+.logo img{
+    width: 40px;
+    height: 40px;
+
+}
+
+.nav-linkovi li{
+    list-style: none;
+}
+
+.nav-linkovi{
+    display: flex;
+    background-color:#bc6c25;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.nav-linkovi a{
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+/* burger meni za mobile-view */
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* responzivnost */
+@media screen and (max-width:1024px){
+    .nav-linkovi{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .burger{
+        display: block;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .nav-linkovi{
+        position: absolute;
+        right: 0px;
+        height: 50vh;
+        width: 50%;
+        top: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.2s ease-in;
+    }
+
+    .nav-linkovi li{
+        opacity: 1;
+    }
+    .nav-active{
+
+        transform: translateX(0%);
+    }
+}
+
+/* STRANA RECENZIJE */
+
+.checked {
+    color: white;
+}
+
+.testimonial-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.testimonial-box{
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.name-user span{
+    color: #979797;
+    font-size: 0.8rem;
+}
+.reviews{
+    color: #f9d71c;
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.client-comment p{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+}
