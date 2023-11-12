@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt | E-Majstore!</title>
+    <title>Kontakeet | E-Majstore!</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
         <div class="logo">
-            <img src="../img/logooo.png" alt="logo-slika">
+            <a href="./index.html"><img src="../img/logo.png" alt="logo-slika"></a>
         </div>
         
         <ul class="nav-linkovi">
@@ -27,21 +27,32 @@
             <div class="linija3"></div>
         </div>
     </nav>
- 
+
     <main>
-        <h1>Za sva vaša pitanja kontaktirajte nas putem forme:</h1>
+        <h2 id="kontakt-h2">Za sva vaša pitanja kontaktirajte nas putem forme:</h2>
         <div>
-            <form action="">
-                   <label for="ime">Vaše ime</label> <input type="text" name="" id="ime">
+            <form action="" id="forma">
+                   <label for="ime">Vaše ime i prezime:</label> 
                    <br>
-                   <label for="prezime">Vaše prezime</label> <input type="text" name="" id="prezime">
+                   <input type="text" name="" id="ime" size="30px" required="required" pattern="^[A-Z, a-z]{6,45}$" title="Molimo Vas unosite 
+                   isključivo slova, i to sa najmanje 6 a najviše 45 znakova.">
                    <br>
-                   <label for="email">Vaš email</label> <input type="email" name="" id="email">
                    <br>
-                   <label for="telefon">Vaš kontakt telefon</label> <input type="tel" name="" id="telefon">
+                   <label for="adresa">Vaša adresa:</label> 
+                   <br>
+                   <input type="text" name="" id="adresa" size="30px" required="required" pattern="^[A-Za-z -]+[0-9]" title="Unesite adresu
+                   koristeci samo slova i brojeve">
+                   <br>
+                   <br>
+                   <label for="telefon">Vaš kontakt telefon:</label> 
+                   <br>
+                   <input type="tel" name="" id="telefon" size="30px" pattern="^[0-9]{9,10}$" title="Molimo Vas unosite isključivo brojeve, 
+                   i to sa najmanje 9 a najviše 10 cifara." required="required">
                     <br>
-                    <label for="grad">Opština</label>
-                    <select name="" id="">
+                    <br>
+                    <label for="grad">Opština:</label>
+                    <br>
+                    <select name="" id="" required="required">
                         <option value="">Izaberite opštinu</option>
                         <option value="">Barajevo</option>
                         <option value="">Voždovac</option>
@@ -62,20 +73,23 @@
                         <option value="">Čukarica</option>
                     </select>
                     <br>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Opis problema"></textarea>
+                    <br>
+                    <label for="problem">Problem koji imate:</label>
+                    <br>
+                    <textarea name="" id="problem" cols="32" rows="9" placeholder="Opis problema" required="required"></textarea>
                     <br>
                     <button type="submit">Pošalji</button>
              </form>
         </div>
     </main>
- 
+
     <footer>
-        <p>Copyright © 2023. Sva prava su zadržana.</p>
-        <p>Made with ♥ by: Luka Stajković, Filip Mitić, Jovan Radojičić
-        </p>
+        <p id="kopi">Copyright © 2023. Sva prava su zadržana.</p>
+        <p id="kreatori">Made with ♥ by: Luka Stajković, Filip Mitić, Jovan Radojičić</p>
     </footer>
 
     <script src="../script/script.js"></script>
+
     
 </body>
 </html>
