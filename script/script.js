@@ -21,6 +21,18 @@ document.getElementById("forma").addEventListener("submit", function(event) {
     }
 });
 
+const toTop = document.querySelector(".to-top");
+
+
+window.addEventListener("scroll",()=>{
+    if(window.scrollY > 100){
+        toTop.classList.add("active");
+    }else{
+        toTop.classList.remove("active");
+    }
+
+})
+
 // klik na uslugu -> majstori te usluge
 
 function preusmeriNaVodoinstalatere() {
@@ -82,3 +94,5 @@ function smanjiElement(element) {
         tooltip.remove();
     }
 }
+
+

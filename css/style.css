@@ -12,9 +12,49 @@
 body{
     background-color: #000000;
 }
+html,body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
 main{
 
     /* padding-top: 2px; */
+}
+
+/* Skrol na gore dugme */
+
+.to-top div{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    align-self: center;
+}
+
+.to-top{
+    background-color: #f4bb00;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    transition: all .4s; 
+    border: solid gray 0.5px;
+
+}
+
+.to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
 }
 
 /* TRAKA ZA NAVIGACIJU */
@@ -134,6 +174,19 @@ nav{
     overflow: hidden;
 }
 
+#mapa{
+    display: flex;
+    line-height: 4;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 75px;
+}
+
+.mapa-naslov{
+    align-self: center;
+}
+
+
 .cover::after{
     content: '';
     height: 100vh;
@@ -176,18 +229,17 @@ nav{
 }
 
 .content .cover-title {
-    color: white;
+    color: #f4bb00;
+    text-shadow: 2px 2px black;
     font-size: 40px;
     line-height: 2;
 }
 
 .cover-mini-title{
-    color: white;
+    color: #f4bb00;
+    text-shadow: 2px 2px black;
 }
 
-.logo:on{
-
-}
 
 .content .logo {
     height: 140px;
@@ -492,6 +544,7 @@ body{
 footer p{
     display: inline;
 }
+
 
 
 /* KONTAKTI- KRAJ */
