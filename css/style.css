@@ -1,14 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=PT+Sans&family=Poppins&display=swap');
+
+
 *{
     margin: 0;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Poppins;
-}
+    color: #f4bb00;
+    font-family: 'PT Sans', sans-serif;
 
+}
+body{
+    background-color: #000000;
+}
+main{
+
+    /* padding-top: 2px; */
+}
 
 /* TRAKA ZA NAVIGACIJU */
 .nav-linkovi a {
-    color: white;
+    color: black;
 }
 
 nav{
@@ -16,7 +27,9 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 10vh;
-    background-color: #bc6c25;
+    background-color: #000000;
+    z-index: 2;
+    border-bottom:solid #f4bb00 1px;    
 
 }
 
@@ -32,16 +45,29 @@ nav{
 
 .nav-linkovi{
     display: flex;
-    background-color:#bc6c25;
     justify-content: space-around;
     width: 50%;
 }
 
+.nav-linkovi a:hover{
+    background-color: #FFD28F;
+    color: gray;
+}
+
+.nav-linkovi a:active{
+    filter: blur(1px);
+}
+
 .nav-linkovi a{
     font-weight: bold;
+    padding: 8px;
+    background-color: #f4bb00;
+    color: whihte;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 3px;
+    border-radius: 6px;
+    transition: 0.3s ease;
     font-size: 14px;
 }
 
@@ -53,7 +79,8 @@ nav{
 .burger div{
     width: 20px;
     height: 3px;
-    background-color: white;
+    background-color: #f4bb00;
+
     margin: 5px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -75,16 +102,22 @@ nav{
         overflow-x: hidden;
     }
     .nav-linkovi{
+        z-index: 3;
         position: absolute;
         right: 0px;
         height: 50vh;
-        width: 50%;
+        width: 60%;
         top: 10vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         transform: translateX(100%);
         transition: transform 0.2s ease-in;
+        background-color: black;
+        border-left:solid #f4bb00 1px;    
+        border-bottom:solid #f4bb00 1px;    
+        border-right:solid #f4bb00 1px;    
+        
     }
 
     .nav-linkovi li{
@@ -97,10 +130,234 @@ nav{
 }
 
 /* POCETNA */
+.cover{
+    overflow: hidden;
+}
+
+.cover::after{
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/landing_cover.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    transition: all 1000ms;
+    z-index: 1;
+    
+
+}
+
+.cover:hover::after{
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+
+}
+
+.cover:hover .content{
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.content{
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 50%;
+    margin-top: 105px;
+    margin-left: -145px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    transition: all 1s;
+}
+
+.content .cover-title {
+    color: white;
+    font-size: 40px;
+    line-height: 2;
+}
+
+.cover-mini-title{
+    color: white;
+}
+
+.logo:on{
+
+}
+
+.content .logo {
+    height: 140px;
+    width: 140px;
+  }
+
+
 
 /* POCETNA-KRAJ */
 
 /* USLUGE */
+
+.vodoinstalateri{
+    text-align: center;
+    margin: 15px;
+}
+
+.elektricari{
+    text-align: center;
+    margin: 15px;
+}
+
+.moleri{
+    text-align: center;
+    margin: 15px;
+}
+
+#vodoinstalateri{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+}
+
+#elektricari{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    text-align: center;
+}
+
+#moleri{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    text-align: center;
+}
+
+#vodoinstalater1{
+    margin: 10px;
+}
+
+#vodoinstalater1 p{
+    text-align:center;
+}
+
+#vodoinstalater2{
+    margin: 10px;
+}
+
+#vodoinstalater2 p{
+    text-align: center;
+}
+
+#vodoinstalater3{
+    margin: 10px;
+}
+
+#vodoinstalater3 p{
+    text-align: center;
+}
+
+#vodoinstalater4{
+    margin: 10px;
+}
+
+#vodoinstalater4 p{
+    text-align: center;
+}
+
+#elektricar1 {
+    margin: 10px;
+}
+
+#elektricar1 p {
+    text-align: center;
+}
+
+#elektricar2 {
+    margin: 10px;
+}
+
+#elektricar2 p {
+    text-align: center;
+}
+
+#elektricar3 {
+    margin: 10px;
+}
+
+#elektricar3 p {
+    text-align: center;
+}
+
+#elektricar4 {
+    margin: 10px;
+}
+
+#elektricar4 p {
+    text-align: center;
+}
+
+#moler1 {
+    margin: 10px;
+}
+
+#moler1 p {
+    text-align: center;
+}
+
+#moler2 {
+    margin: 10px;
+}
+
+#moler2 p {
+    text-align: center;
+}
+
+#moler3 {
+    margin: 10px;
+}
+
+#moler3 p {
+    text-align: center;
+}
+
+#moler4 {
+    margin: 10px;
+}
+
+#moler4 p {
+    text-align: center;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1;
+    bottom: 150px;
+    left: 100px;
+}
+
+.vodoinstalater12{
+    position: relative;
+}
+
+.elektricari12{
+    position: relative;
+}
+
+.moleri12{
+    position: relative;
+}
 
 /* USLUGE-KRAJ */
 
@@ -117,17 +374,17 @@ nav{
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
+    background-color: black;
 }
 
 .testimonial-box{
     width: 500px;
     box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
-    background-color: #ffffff;
+    background-color: #f4bb00;
     padding: 20px;
     margin: 15px;
     cursor: pointer;
 }
-
 .profile-img{
     width: 50px;
     height: 50px;
@@ -161,7 +418,7 @@ nav{
     font-size: 0.8rem;
 }
 .reviews{
-    color: #f9d71c;
+    color: red;
 }
 .box-top{
     display: flex;
@@ -173,10 +430,68 @@ nav{
     font-size: 0.9rem;
     color: #4b4b4b;
 }
+.testimonial-box:hover {
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+
+.reviews{
+    margin-top: 10px;
+}
+::selection{
+    color: #ffffff;
+    background-color: #252525;
+}
+
+footer{
+    background-color: #FFE3BB;
+    text-align: right;
+    bottom: 0;
+    position: relative;
+    right: 0;
+    left: 0;
+    margin: 0;
+}
+
 /* RECENZIJE-KRAJ */
 
 
 /* KONTAKTI */
+
+div form{
+    background-color: #FFE3BB;
+    top: 50%;
+    width: 30%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+div form textarea{
+    resize: none;
+}
+#kontakt-h2{
+    text-align: center;
+    margin: 10px;
+    color: #f4bb00;
+}
+main{
+    /* background-color: #B4BDFF; */
+    flex-grow: 1;
+}
+
+
+body{
+    min-height: 100vh;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer p{
+    display: inline;
+}
 
 
 /* KONTAKTI- KRAJ */
