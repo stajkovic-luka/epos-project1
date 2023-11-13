@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function() {
 // davanje funkcionalnosti burger meniju
 const navSlider = () => {
     const burger = document.querySelector('.burger');
@@ -21,6 +22,7 @@ document.getElementById("forma").addEventListener("submit", function(event) {
     }
 });
 
+//scroll-to-top dugme u uglu stranice
 const toTop = document.querySelector(".to-top");
 
 
@@ -94,5 +96,5 @@ function smanjiElement(element) {
         tooltip.remove();
     }
 }
-
+});
 
