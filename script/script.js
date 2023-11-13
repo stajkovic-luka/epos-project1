@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
 // davanje funkcionalnosti burger meniju
 const navSlider = () => {
     const burger = document.querySelector('.burger');
@@ -11,6 +10,8 @@ const navSlider = () => {
 
 navSlider();
 // pop up window
+document.addEventListener("DOMContentLoaded", function() {
+
 document.getElementById("forma").addEventListener("submit", function(event) {
     event.preventDefault();
     var potvrda = confirm("Forma je uspešno popunjena. Da li želite da potvrdite slanje?");
@@ -21,7 +22,7 @@ document.getElementById("forma").addEventListener("submit", function(event) {
         alert("Forma nije poslata!");
     }
 });
-
+});
 //scroll-to-top dugme u uglu stranice
 const toTop = document.querySelector(".to-top");
 
@@ -96,5 +97,5 @@ function smanjiElement(element) {
         tooltip.remove();
     }
 }
-});
+
 
