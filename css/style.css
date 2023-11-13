@@ -17,10 +17,8 @@ html,body{
     scroll-behavior: smooth;
     max-width: 100%;
 }
-main{
 
-    /* padding-top: 2px; */
-}
+
 
 /* Skrol na gore dugme */
 
@@ -333,6 +331,7 @@ nav{
 
  .ocene-flex{
     display: flex;
+    flex-wrap: wrap;
 } 
 
  .osoba{
