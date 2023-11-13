@@ -129,12 +129,49 @@ nav{
 
 /* responzivnost */
 @media screen and (max-width:1024px){
-    .nav-linkovi{
-        width: 60%;
+    @media screen and (max-width:1024px){
+
+       
+
+        iframe{
+            width: 20rem;
+            height: 20rem;
+        }
+
+        .nav-linkovi{
+            width: 60%;
+        }
+     
+        #kontakt-media{
+            width: 100%;
+        }
+     
+        #forma{
+            width: 90%;
+        }
+     
+        .pointer{
+            max-width: 100%;
+            height: auto;
+        }
+     
+        .vodoinstalater12{
+            max-width: 90%;
+        }
+     
+        .elektricari12{
+            max-width: 90%;
+        }
+     
+        .moleri12{
+            max-width: 90%;
+        }
     }
 }
 
 @media screen and (max-width:768px){
+
+
     .burger{
         display: block;
     }
@@ -156,36 +193,72 @@ nav{
         background-color: black;
         border-left:solid #f4bb00 1px;    
         border-bottom:solid #f4bb00 1px;    
-        border-right:solid #f4bb00 1px;    
-        
+        border-right:solid #f4bb00 1px;  
     }
-
+ 
     .nav-linkovi li{
         opacity: 1;
     }
     .nav-active{
-
+ 
         transform: translateX(0%);
     }
+ 
+    #forma{
+        max-width: 100%;
+    }
+ 
+    .vodoinstalater12{
+        max-width: 90%;
+    }
+ 
+    .elektricari12{
+        max-width: 90%;
+    }
+ 
+    .moleri12{
+        max-width: 90%;
+    }
 }
+
+
 
 /* POCETNA */
 .cover{
     overflow: hidden;
 }
 
-#mapa{
+
+ #mapa{
     display: flex;
-    line-height: 4;
+
     align-items: center;
     flex-direction: column;
     padding-bottom: 75px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .mapa-naslov{
     align-self: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
 }
 
+#o-nama {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    padding:0 100px;
+}
+
+#o-nama h2{
+    padding-bottom: 20px;
+}
 
 .cover::after{
     content: '';
@@ -246,6 +319,43 @@ nav{
     width: 140px;
   }
 
+.okvir{
+    border: solid #f4bb00 5px;
+    line-height: 0;
+}
+
+
+.ocene-naslov{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+ .ocene-flex{
+    display: flex;
+} 
+
+ .osoba{
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+   align-items: center;
+} 
+
+.osoba p{
+    text-align: center;
+}
+
+.osoba img{
+    border: solid #f4bb00 3px;
+}
+
+.slika-osoba{
+    height: 200px;
+    width: 200px;
+    padding: 8px;
+}
+
 
 
 /* POCETNA-KRAJ */
@@ -256,138 +366,138 @@ nav{
     text-align: center;
     margin: 15px;
 }
-
+ 
 .elektricari{
     text-align: center;
     margin: 15px;
 }
-
+ 
 .moleri{
     text-align: center;
     margin: 15px;
 }
-
+ 
 #vodoinstalateri{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     text-align: center;
 }
-
+ 
 #elektricari{
     display: flex;
     flex-wrap: wrap;
     gap: 80px;
     text-align: center;
 }
-
+ 
 #moleri{
     display: flex;
     flex-wrap: wrap;
     gap: 80px;
     text-align: center;
 }
-
+ 
 #vodoinstalater1{
     margin: 10px;
 }
-
+ 
 #vodoinstalater1 p{
     text-align:center;
 }
-
+ 
 #vodoinstalater2{
     margin: 10px;
 }
-
+ 
 #vodoinstalater2 p{
     text-align: center;
 }
-
+ 
 #vodoinstalater3{
     margin: 10px;
 }
-
+ 
 #vodoinstalater3 p{
     text-align: center;
 }
-
+ 
 #vodoinstalater4{
     margin: 10px;
 }
-
+ 
 #vodoinstalater4 p{
     text-align: center;
 }
-
+ 
 #elektricar1 {
     margin: 10px;
 }
-
+ 
 #elektricar1 p {
     text-align: center;
 }
-
+ 
 #elektricar2 {
     margin: 10px;
 }
-
+ 
 #elektricar2 p {
     text-align: center;
 }
-
+ 
 #elektricar3 {
     margin: 10px;
 }
-
+ 
 #elektricar3 p {
     text-align: center;
 }
-
+ 
 #elektricar4 {
     margin: 10px;
 }
-
+ 
 #elektricar4 p {
     text-align: center;
 }
-
+ 
 #moler1 {
     margin: 10px;
 }
-
+ 
 #moler1 p {
     text-align: center;
 }
-
+ 
 #moler2 {
     margin: 10px;
 }
-
+ 
 #moler2 p {
     text-align: center;
 }
-
+ 
 #moler3 {
     margin: 10px;
 }
-
+ 
 #moler3 p {
     text-align: center;
 }
-
+ 
 #moler4 {
     margin: 10px;
 }
-
+ 
 #moler4 p {
     text-align: center;
 }
-
+ 
 .pointer{
     cursor: pointer;
 }
-
+ 
 .tooltip {
     position: absolute;
     background-color: #333;
@@ -398,19 +508,94 @@ nav{
     bottom: 150px;
     left: 100px;
 }
-
+ 
 .vodoinstalater12{
     position: relative;
 }
-
+ 
 .elektricari12{
     position: relative;
 }
-
+ 
 .moleri12{
     position: relative;
 }
-
+ 
+/* USLUGE-KRAJ */
+ 
+ 
+/* STRANA RECENZIJE */
+ 
+#recenzije-main{
+    display: flex;
+}
+ 
+.checked {
+    color: white;
+}
+ 
+.testimonial-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+ 
+.testimonial-box{
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+ 
+.profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+ 
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+ 
+.profile{
+    display: flex;
+    align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.name-user span{
+    color: #979797;
+    font-size: 0.8rem;
+}
+.reviews{
+    color: #f9d71c;
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.client-comment p{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+}
 /* USLUGE-KRAJ */
 
 
@@ -496,8 +681,10 @@ nav{
 }
 
 footer{
-    background-color: #FFE3BB;
-    text-align: right;
+    background-color: black;
+    border-top: solid #f4bb00 2px;
+    text-align: center;
+    padding: 20px;
     bottom: 0;
     position: relative;
     right: 0;
@@ -510,6 +697,19 @@ footer{
 
 /* KONTAKTI */
 
+div label{
+    color: #000000;
+}
+
+select{
+    padding: 5px;
+    color: black;
+}
+
+textarea{
+    color: grey;
+}
+
 div form{
     background-color: #FFE3BB;
     top: 50%;
@@ -518,16 +718,26 @@ div form{
     padding: 10px;
     text-align: center;
     border-radius: 30px;
+    margin-bottom: 80px;
+    margin-top: 50px;
 }
-
+ 
 div form textarea{
     resize: none;
 }
 #kontakt-h2{
     text-align: center;
     margin: 10px;
-    color: #f4bb00;
+    color: black;
 }
+
+button{
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    padding: 5px;
+}
+
 main{
     /* background-color: #B4BDFF; */
     flex-grow: 1;
@@ -540,11 +750,6 @@ body{
     display: flex;
     flex-direction: column;
 }
-
-footer p{
-    display: inline;
-}
-
 
 
 /* KONTAKTI- KRAJ */
