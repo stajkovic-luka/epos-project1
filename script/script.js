@@ -9,20 +9,7 @@ const navSlider = () => {
 }
 
 navSlider();
-// pop up window
-document.addEventListener("DOMContentLoaded", function() {
 
-document.getElementById("forma").addEventListener("submit", function(event) {
-    event.preventDefault();
-    var potvrda = confirm("Forma je uspešno popunjena. Da li želite da potvrdite slanje?");
-    if (potvrda) {
-        alert("Hvala Vam!");
-        document.getElementById("forma").reset();
-    } else {
-        alert("Forma nije poslata!");
-    }
-});
-});
 //scroll-to-top dugme u uglu stranice
 const toTop = document.querySelector(".to-top");
 
