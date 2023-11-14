@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=PT+Sans&family=Poppins&display=swap');
-
-
+ 
+ 
 *{
     margin: 0;
     padding: 0px;
     box-sizing: border-box;
     color: #f4bb00;
     font-family: 'PT Sans', sans-serif;
-
+ 
 }
 body{
     background-color: #000000;
@@ -17,11 +17,11 @@ html,body{
     scroll-behavior: smooth;
     max-width: 100%;
 }
-
-
-
+ 
+ 
+ 
 /* Skrol na gore dugme */
-
+ 
 .to-top div{
     color: black;
     display: flex;
@@ -29,7 +29,7 @@ html,body{
     height: 50%;
     align-self: center;
 }
-
+ 
 .to-top{
     background-color: #f4bb00;
     position: fixed;
@@ -46,20 +46,20 @@ html,body{
     text-decoration: none;
     transition: all .4s; 
     border: solid gray 0.5px;
-
+ 
 }
-
+ 
 .to-top.active{
     bottom: 32px;
     pointer-events: auto;
     opacity: 1;
 }
-
+ 
 /* TRAKA ZA NAVIGACIJU */
 .nav-linkovi a {
     color: black;
 }
-
+ 
 nav{
     display: flex;
     justify-content: space-around;
@@ -68,34 +68,34 @@ nav{
     background-color: #000000;
     z-index: 2;
     border-bottom:solid #f4bb00 1px;    
-
+ 
 }
-
+ 
 .logo img{
     width: 40px;
     height: 40px;
-
+ 
 }
-
+ 
 .nav-linkovi li{
     list-style: none;
 }
-
+ 
 .nav-linkovi{
     display: flex;
     justify-content: space-around;
     width: 50%;
 }
-
+ 
 .nav-linkovi a:hover{
     background-color: #FFD28F;
     color: gray;
 }
-
+ 
 .nav-linkovi a:active{
     filter: blur(1px);
 }
-
+ 
 .nav-linkovi a{
     font-weight: bold;
     padding: 8px;
@@ -108,7 +108,7 @@ nav{
     transition: 0.3s ease;
     font-size: 14px;
 }
-
+ 
 /* burger meni za mobile-view */
 .burger{
     display: none;
@@ -118,24 +118,24 @@ nav{
     width: 20px;
     height: 3px;
     background-color: #f4bb00;
-
+ 
     margin: 5px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-
-
+ 
+ 
 /* responzivnost */
 @media screen and (max-width:1024px){
     @media screen and (max-width:1024px){
-
+ 
        
-
+ 
         iframe{
             width: 20rem;
             height: 20rem;
         }
-
+ 
         .nav-linkovi{
             width: 60%;
         }
@@ -153,23 +153,23 @@ nav{
             height: auto;
         }
      
-        .vodoinstalater12{
+        .vodoinstalater12 img{
             max-width: 90%;
         }
      
-        .elektricari12{
+        .elektricari12 img{
             max-width: 90%;
         }
      
-        .moleri12{
+        .moleri12 img{
             max-width: 90%;
         }
     }
 }
 
 @media screen and (max-width:768px){
-
-
+ 
+    
     .burger{
         display: block;
     }
@@ -206,43 +206,48 @@ nav{
         max-width: 100%;
     }
  
-    .vodoinstalater12{
+    .vodoinstalater12 img{
         max-width: 90%;
     }
  
-    .elektricari12{
+    .elektricari12 img{
         max-width: 90%;
     }
  
-    .moleri12{
+    .moleri12 img{
         max-width: 90%;
     }
+    
+    .osoba p{
+        padding: 20px 0;
+    }
+
 }
-
-
-
+ 
+ 
+ 
 /* POCETNA */
 .cover{
     overflow: hidden;
 }
-
-
+ 
+ 
  #mapa{
     display: flex;
-
+ 
     align-items: center;
     flex-direction: column;
     padding-bottom: 75px;
     padding-left: 100px;
     padding-right: 100px;
 }
-
+ 
 .mapa-naslov{
     align-self: center;
     margin-bottom: 20px;
     margin-top: 50px;
 }
-
+ 
 #o-nama {
     display: flex;
     justify-content: center;
@@ -253,11 +258,11 @@ nav{
     width: 100%;
     padding:0 100px;
 }
-
+ 
 #o-nama h2{
     padding-bottom: 20px;
 }
-
+ 
 .cover::after{
     content: '';
     height: 100vh;
@@ -272,20 +277,20 @@ nav{
     transition: all 1000ms;
     z-index: 1;
     
-
+ 
 }
-
+ 
 .cover:hover::after{
     filter: blur(0px);
     -webkit-filter: blur(0px);
-
+ 
 }
-
+ 
 .cover:hover .content{
     filter: blur(2px);
     -webkit-filter: blur(2px);
 }
-
+ 
 .content{
     position: absolute;
     z-index: 1;
@@ -298,69 +303,72 @@ nav{
     text-align: center;
     transition: all 1s;
 }
-
+ 
 .content .cover-title {
     color: #f4bb00;
     text-shadow: 2px 2px black;
     font-size: 40px;
     line-height: 2;
 }
-
+ 
 .cover-mini-title{
     color: #f4bb00;
     text-shadow: 2px 2px black;
 }
-
-
+ 
+ 
 .content .logo {
     height: 140px;
     width: 140px;
   }
-
+ 
 .okvir{
     border: solid #f4bb00 5px;
     line-height: 0;
 }
-
-
+ 
+ 
 .ocene-naslov{
     text-align: center;
     margin-top: 20px;
     margin-bottom: 60px;
 }
-
+ 
  .ocene-flex{
     display: flex;
     flex-wrap: wrap;
 } 
-
+ 
  .osoba{
    display: flex;
    flex-direction: column;
    margin: 0 auto;
    align-items: center;
 } 
-
+ 
 .osoba p{
     text-align: center;
 }
-
+ 
 .osoba img{
     border: solid #f4bb00 3px;
 }
-
+ 
 .slika-osoba{
     height: 200px;
     width: 200px;
     padding: 8px;
 }
+ 
+.osoba h3{
+    padding:15px 0;
+}
 
-
-
+ 
 /* POCETNA-KRAJ */
-
+ 
 /* USLUGE */
-
+ 
 .vodoinstalateri{
     text-align: center;
     margin: 15px;
@@ -381,6 +389,8 @@ nav{
     flex-wrap: wrap;
     gap: 10px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
  
 #elektricari{
@@ -388,6 +398,8 @@ nav{
     flex-wrap: wrap;
     gap: 80px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
  
 #moleri{
@@ -395,102 +407,8 @@ nav{
     flex-wrap: wrap;
     gap: 80px;
     text-align: center;
-}
- 
-#vodoinstalater1{
-    margin: 10px;
-}
- 
-#vodoinstalater1 p{
-    text-align:center;
-}
- 
-#vodoinstalater2{
-    margin: 10px;
-}
- 
-#vodoinstalater2 p{
-    text-align: center;
-}
- 
-#vodoinstalater3{
-    margin: 10px;
-}
- 
-#vodoinstalater3 p{
-    text-align: center;
-}
- 
-#vodoinstalater4{
-    margin: 10px;
-}
- 
-#vodoinstalater4 p{
-    text-align: center;
-}
- 
-#elektricar1 {
-    margin: 10px;
-}
- 
-#elektricar1 p {
-    text-align: center;
-}
- 
-#elektricar2 {
-    margin: 10px;
-}
- 
-#elektricar2 p {
-    text-align: center;
-}
- 
-#elektricar3 {
-    margin: 10px;
-}
- 
-#elektricar3 p {
-    text-align: center;
-}
- 
-#elektricar4 {
-    margin: 10px;
-}
- 
-#elektricar4 p {
-    text-align: center;
-}
- 
-#moler1 {
-    margin: 10px;
-}
- 
-#moler1 p {
-    text-align: center;
-}
- 
-#moler2 {
-    margin: 10px;
-}
- 
-#moler2 p {
-    text-align: center;
-}
- 
-#moler3 {
-    margin: 10px;
-}
- 
-#moler3 p {
-    text-align: center;
-}
- 
-#moler4 {
-    margin: 10px;
-}
- 
-#moler4 p {
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
  
 .pointer{
@@ -596,14 +514,14 @@ nav{
     color: #4b4b4b;
 }
 /* USLUGE-KRAJ */
-
-
+ 
+ 
 /* STRANA RECENZIJE */
-
+ 
 .checked {
     color: white;
 }
-
+ 
 .testimonial-box-container{
     display: flex;
     justify-content: center;
@@ -612,7 +530,7 @@ nav{
     width: 100%;
     background-color: black;
 }
-
+ 
 .testimonial-box{
     width: 500px;
     box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
@@ -628,14 +546,14 @@ nav{
     overflow: hidden;
     margin-right: 10px;
 }
-
+ 
 .profile-img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
-
+ 
 .profile{
     display: flex;
     align-items: center;
@@ -670,7 +588,7 @@ nav{
     transform: translateY(-10px);
     transition: all ease 0.3s;
 }
-
+ 
 .reviews{
     margin-top: 10px;
 }
@@ -678,7 +596,7 @@ nav{
     color: #ffffff;
     background-color: #252525;
 }
-
+ 
 footer{
     background-color: black;
     border-top: solid #f4bb00 2px;
@@ -690,25 +608,25 @@ footer{
     left: 0;
     margin: 0;
 }
-
+ 
 /* RECENZIJE-KRAJ */
-
-
+ 
+ 
 /* KONTAKTI */
-
+ 
 div label{
     color: #000000;
 }
-
+ 
 select{
     padding: 5px;
     color: black;
 }
-
+ 
 textarea{
     color: grey;
 }
-
+ 
 div form{
     background-color: #FFE3BB;
     top: 50%;
@@ -729,26 +647,26 @@ div form textarea{
     margin: 10px;
     color: black;
 }
-
+ 
 button{
     color: #000000;
     margin-top: 20px;
     margin-bottom: 25px;
     padding: 5px;
 }
-
+ 
 main{
     /* background-color: #B4BDFF; */
     flex-grow: 1;
 }
-
-
+ 
+ 
 body{
     min-height: 100vh;
     margin: 0px;
     display: flex;
     flex-direction: column;
 }
-
-
+ 
+ 
 /* KONTAKTI- KRAJ */
