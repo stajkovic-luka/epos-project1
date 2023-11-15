@@ -164,6 +164,7 @@ nav{
         .moleri12 img{
             max-width: 90%;
         }
+
     }
 }
 
@@ -231,6 +232,10 @@ nav{
     overflow: hidden;
 }
  
+.logo img:hover{
+    box-shadow: 0px 0px 5px #f4bb00;
+}
+
  
  #mapa{
     display: flex;
@@ -369,6 +374,10 @@ nav{
  
 /* USLUGE */
  
+.main-usluge{
+    margin: 30px 0;
+}
+
 .vodoinstalateri{
     text-align: center;
     margin: 15px;
@@ -415,27 +424,30 @@ nav{
     cursor: pointer;
 }
  
-.tooltip {
+.tooltip img{
     position: absolute;
     background-color: #333;
     color: #fff;
     padding: 5px;
     border-radius: 5px;
     z-index: 1;
-    bottom: 150px;
-    left: 100px;
+    bottom: 0;
+    left: 0;
 }
  
 .vodoinstalater12{
     position: relative;
+    margin: 50px;
 }
  
 .elektricari12{
     position: relative;
+    margin: 50px;
 }
  
 .moleri12{
     position: relative;
+    margin: 50px;
 }
  
 /* USLUGE-KRAJ */
@@ -668,5 +680,9 @@ body{
     flex-direction: column;
 }
  
+#kontakt-h2{
+    padding-top: 20px;
+    color: #f4bb00;
+}
  
 /* KONTAKTI- KRAJ */

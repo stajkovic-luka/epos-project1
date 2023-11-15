@@ -1,25 +1,14 @@
 // pop up window
-$(document).ready(function () {
-
-    var unetoIme = $("#ime");
-    var unetaAdresa = $("#adresa");
-    var unetiBrTeleona = $("#telefon");
-    var unetiProblem = $("#problem");
-
-    function getOption() {
-        izabraniElement = $("#grad-izbor-id");
-        output = izabraniElement.find(":selected").text();
-        return output;
+function prikazi_confirm(){
+    var ime=document.getElementById('ime').value;
+    var adresa=document.getElementById('adresa').value;
+    var broj=document.getElementById('telefon').value;
+    var poruka=confirm("Vaše ime i prezime: "+ime+"\n\nAdresa: "+adresa+"\n\nBroj telefona: "+broj+"\n\nPre potvrde proverite da li su vaše informacije tačno unete.")
+    if(poruka==true){
+        alert("Uspešno ste poslali prijavu!");
+        document.getElementById('forma').reset();
+    } else {
+        alert("Ispravite grešku!");
     }
-
-    $("#forma").submit(function (event) {
-        event.preventDefault();
-        var potvrda = confirm("Forma je uspešno popunjena. Da li želite da potvrdite slanje?");
-        if (potvrda) {
-            confirm("Uneti podaci su: " + unetoIme.val() + "\n" + unetaAdresa.val() + "\n" + unetiBrTeleona.val() + "\n" + getOption() + "\n" + unetiProblem.val());
-            $("#forma").reset();
-        } else {
-            alert("Forma nije poslata!");
-        }
-    });
-});
+}
+document.getElementById('dugme').addEventListener('click', prikazi_confirm);
