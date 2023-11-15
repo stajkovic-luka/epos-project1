@@ -40,33 +40,49 @@ function preusmeriNaMolere() {
 //poveca/smanji sliku usluga kad se hoveruje/ne hoveruje misem
 
 function uvecajSliku1(element) {
+   if(proveriVelicinuEkrana()){
     element.style.width = "850px";
     element.style.height = "350px";
+   }
 }
 
 function smanjiSliku1(element) {
-    element.style.width = "800px";
-    element.style.height = "300px";
+    if(proveriVelicinuEkrana()){
+        element.style.width = "800px";
+        element.style.height = "300px";
+       }
 }
 
 function uvecajSliku2(element) {
-    element.style.width = "850px";
-    element.style.height = "350px";
+    if(proveriVelicinuEkrana()){
+        element.style.width = "850px";
+        element.style.height = "350px";
+       }
 }
 
 function smanjiSliku2(element) {
-    element.style.width = "800px";
-    element.style.height = "300px";
+    if(proveriVelicinuEkrana()){
+        element.style.width = "800px";
+        element.style.height = "300px";
+       }
 }
 
 function uvecajSliku3(element) {
-    element.style.width = "850px";
-    element.style.height = "350px";
+    if(proveriVelicinuEkrana()){
+        element.style.width = "850px";
+        element.style.height = "350px";
+       }
 }
 
 function smanjiSliku3(element) {
-    element.style.width = "800px";
-    element.style.height = "300px";
+    if(proveriVelicinuEkrana()){
+        element.style.width = "800px";
+        element.style.height = "300px";
+       }
+}
+
+function proveriVelicinuEkrana() {
+    return window.innerWidth > 768;
 }
 
 //hover preko majstora prikaze prosecnu ocenu
