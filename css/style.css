@@ -70,7 +70,11 @@ nav{
     border-bottom:solid #f4bb00 1px;    
  
 }
- 
+
+.logo img:hover{
+    box-shadow: 0px 0px 5px #f4bb00;
+}
+
 .logo img{
     width: 40px;
     height: 40px;
