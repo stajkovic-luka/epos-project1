@@ -127,7 +127,6 @@ nav{
  
 /* responzivnost */
 @media screen and (max-width:1024px){
-    @media screen and (max-width:1024px){
  
        
  
@@ -165,16 +164,8 @@ nav{
             max-width: 90%;
         }
 
-    }
 }
 
-/* responzivnost za recenzije za telefon */
-@media screen and (max-width:768px){
-    .client-comment p{
-        font-size: 20px;
-    }
-
-}
 
 @media screen and (max-width:768px){
  
@@ -202,12 +193,12 @@ nav{
         border-bottom:solid #f4bb00 1px;    
         border-right:solid #f4bb00 1px;  
     }
- 
+    
     .nav-linkovi li{
         opacity: 1;
     }
     .nav-active{
- 
+        
         transform: translateX(0%);
     }
  
@@ -222,7 +213,7 @@ nav{
     .elektricari12 img{
         max-width: 90%;
     }
- 
+    
     .moleri12 img{
         max-width: 90%;
     }
@@ -230,11 +221,11 @@ nav{
     .osoba p{
         padding: 20px 0;
     }
-
+    
 }
- 
- 
- 
+
+
+
 /* POCETNA */
 .cover{
     overflow: hidden;
@@ -245,22 +236,22 @@ nav{
 }
 
  
- #mapa{
+#mapa{
     display: flex;
- 
+    
     align-items: center;
     flex-direction: column;
     padding-bottom: 75px;
     padding-left: 100px;
     padding-right: 100px;
 }
- 
+
 .mapa-naslov{
     align-self: center;
     margin-bottom: 20px;
     margin-top: 50px;
 }
- 
+
 #o-nama {
     display: flex;
     justify-content: center;
@@ -271,11 +262,11 @@ nav{
     width: 100%;
     padding:0 100px;
 }
- 
+
 #o-nama h2{
     padding-bottom: 20px;
 }
- 
+
 .cover::after{
     content: '';
     height: 100vh;
@@ -290,20 +281,20 @@ nav{
     transition: all 1000ms;
     z-index: 1;
     
- 
+    
 }
- 
+
 .cover:hover::after{
     filter: blur(0px);
     -webkit-filter: blur(0px);
- 
+    
 }
- 
+
 .cover:hover .content{
     filter: blur(2px);
     -webkit-filter: blur(2px);
 }
- 
+
 .content{
     position: absolute;
     z-index: 1;
@@ -316,82 +307,70 @@ nav{
     text-align: center;
     transition: all 1s;
 }
- 
+
 .content .cover-title {
     color: #f4bb00;
     text-shadow: 2px 2px black;
     font-size: 40px;
     line-height: 2;
 }
- 
+
 .cover-mini-title{
     color: #f4bb00;
     text-shadow: 2px 2px black;
 }
- 
- 
+
+
 .content .logo {
     height: 140px;
     width: 140px;
-  }
- 
+}
+
 .okvir{
     border: solid #f4bb00 5px;
     line-height: 0;
 }
- 
- 
-.ocene-naslov{
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 60px;
-}
- 
- .ocene-flex{
+
+.osoba{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
 } 
- 
- .osoba{
-   display: flex;
-   flex-direction: column;
-   margin: 0 auto;
-   align-items: center;
-} 
- 
+
 .osoba p{
     text-align: center;
 }
- 
+
 .osoba img{
     border: solid #f4bb00 3px;
 }
- 
+
 .slika-osoba{
     height: 200px;
     width: 200px;
     padding: 8px;
 }
- 
+
 .osoba h3{
     padding:15px 0;
 }
 
- 
+
 /* POCETNA-KRAJ */
- 
+
 /* USLUGE */
 
 .vodoinstalateri{
     text-align: center;
     margin: 15px;
 }
- 
+
 .elektricari{
     text-align: center;
     margin: 15px;
 }
- 
+
 .moleri{
     text-align: center;
     margin: 15px;
@@ -405,7 +384,7 @@ nav{
     justify-content: center;
     align-items: center;
 }
- 
+
 #elektricari{
     display: flex;
     flex-wrap: wrap;
@@ -414,7 +393,7 @@ nav{
     justify-content: center;
     align-items: center;
 }
- 
+
 #moleri{
     display: flex;
     flex-wrap: wrap;
@@ -423,11 +402,11 @@ nav{
     justify-content: center;
     align-items: center;
 }
- 
+
 .pointer{
     cursor: pointer;
 }
- 
+
 .tooltip img{
     position: absolute;
     background-color: #333;
@@ -443,22 +422,30 @@ nav{
     position: relative;
     margin: 50px;
 }
- 
+
 .elektricari12{
     position: relative;
     margin: 50px;
 }
- 
+
 .moleri12{
     position: relative;
     margin: 50px;
 }
- 
+
 /* USLUGE-KRAJ */
- 
- 
+
+
 /* STRANA RECENZIJE */
- 
+/* responzivnost za recenzije za telefon */
+@media screen and (max-width:485px){
+    .rec-tekst{
+        max-width: 100%; 
+        font-size: 15px !important;
+    }
+
+}
+
 .checked {
     color: white;
 }
@@ -470,7 +457,7 @@ nav{
     flex-wrap: wrap;
     width: 100%;
 }
- 
+
 .testimonial-box{
     width: 400px;
     height: 200px;
@@ -516,27 +503,26 @@ nav{
     color: #979797;
     font-size: 0.8rem;
 }
-.reviews{
-    color: red;
-}
 .box-top{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
-.client-comment p{
-    font-size: 0.9rem;
+
+
+.rec-tekst{
+    text-align: center;
+    font-size: 12px !important;
+    max-width: 100% !important;
     color: #4b4b4b;
+    padding-bottom: 40px;
 }
 .testimonial-box:hover {
     transform: translateY(-10px);
     transition: all ease 0.3s;
 }
- 
-.reviews{
-    margin-top: 10px;
-}
+
 ::selection{
     color: #ffffff;
     background-color: #252525;
