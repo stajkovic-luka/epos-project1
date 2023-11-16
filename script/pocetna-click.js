@@ -7,16 +7,16 @@ $(document).ready(function () {
 
         // zamena pozadine sa sarom i obicne crne
         if (isBlackBackground) {
-            $("body").css({
+            $("main").css({
                 "background-color": "black",
                 "background-image": "none", // Reset background image
             });
         } else {
             // vracanje na stara podesavanja
-            $("body").css({
+            $("main").css({
                 "background-color": "transparent", // Reset background color
                 "background-image": "url('../img/pattern/ooo.png')",
-                // "background-size": "contain",
+                "background-size": "cover",
                 "background-repeat": "repeat",
                 "background-position": "center center",
                 "background-attachment": "fixed",
