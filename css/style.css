@@ -168,6 +168,14 @@ nav{
     }
 }
 
+/* responzivnost za recenzije za telefon */
+@media screen and (max-width:768px){
+    .client-comment p{
+        font-size: 20px;
+    }
+
+}
+
 @media screen and (max-width:768px){
  
     
@@ -373,10 +381,6 @@ nav{
 /* POCETNA-KRAJ */
  
 /* USLUGE */
- 
-.main-usluge{
-    margin: 30px 0;
-}
 
 .vodoinstalateri{
     text-align: center;
@@ -455,10 +459,6 @@ nav{
  
 /* STRANA RECENZIJE */
  
-#recenzije-main{
-    display: flex;
-}
- 
 .checked {
     color: white;
 }
@@ -472,84 +472,17 @@ nav{
 }
  
 .testimonial-box{
-    width: 500px;
-    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 15px;
-    cursor: pointer;
-}
- 
-.profile-img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-right: 10px;
-}
- 
-.profile-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
- 
-.profile{
-    display: flex;
-    align-items: center;
-}
-.name-user{
-    display: flex;
-    flex-direction: column;
-}
-.name-user strong{
-    color: #3d3d3d;
-    font-size: 1.1rem;
-    letter-spacing: 0.5px;
-}
-.name-user span{
-    color: #979797;
-    font-size: 0.8rem;
-}
-.reviews{
-    color: #f9d71c;
-}
-.box-top{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-.client-comment p{
-    font-size: 0.9rem;
-    color: #4b4b4b;
-}
-/* USLUGE-KRAJ */
- 
- 
-/* STRANA RECENZIJE */
- 
-.checked {
-    color: white;
-}
- 
-.testimonial-box-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    background-color: black;
-}
- 
-.testimonial-box{
-    width: 500px;
+    width: 400px;
+    height: 200px;
     box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
     background-color: #f4bb00;
     padding: 20px;
     margin: 15px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 .profile-img{
     width: 50px;
@@ -608,21 +541,11 @@ nav{
     color: #ffffff;
     background-color: #252525;
 }
- 
-footer{
-    background-color: black;
-    border-top: solid #f4bb00 2px;
-    text-align: center;
-    padding: 20px;
-    bottom: 0;
-    position: relative;
-    right: 0;
-    left: 0;
-    margin: 0;
-}
- 
+
 /* RECENZIJE-KRAJ */
  
+
+
  
 /* KONTAKTI */
  
@@ -638,7 +561,7 @@ select{
 textarea{
     color: grey;
 }
- 
+
 div form{
     background-color: #FFE3BB;
     top: 50%;
@@ -659,30 +582,42 @@ div form textarea{
     margin: 10px;
     color: black;
 }
- 
+
 button{
     color: #000000;
     margin-top: 20px;
     margin-bottom: 25px;
     padding: 5px;
 }
- 
+
 main{
     /* background-color: #B4BDFF; */
     flex-grow: 1;
 }
- 
- 
+
+
 body{
     min-height: 100vh;
     margin: 0px;
     display: flex;
     flex-direction: column;
 }
- 
+
 #kontakt-h2{
     padding-top: 20px;
     color: #f4bb00;
 }
- 
+
 /* KONTAKTI- KRAJ */
+
+footer{
+    background-color: inherit;
+    border-top: solid #f4bb00 2px;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    position: relative;
+    right: 0;
+    left: 0;
+    margin: 0;
+}

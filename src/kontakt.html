@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="shortcut icon" href="#">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
 </head>
 <body>
     <nav>
         <div class="logo">
-            <a href="./index.html"><img src="../img/logo.png" alt="logo-slika"></a>
+            <a href="#"><img src="../img/logo.png" alt="logo-slika"></a>
         </div>
         
         <ul class="nav-linkovi">
@@ -34,45 +35,42 @@
         <h2 id="kontakt-h2">Za sva vaša pitanja kontaktirajte nas putem forme:</h2>
         <div>
             <form action="" id="forma">
-                   <label for="ime">Vaše ime i prezime:</label> 
+                   <label for="ime">Vaše ime:</label> 
                    <br>
-                   <input type="text" name="" id="ime" size="30px" required="required" pattern="^[A-Z, a-z]{6,45}$" title="Molimo Vas unosite 
-                   isključivo slova, i to sa najmanje 6 a najviše 45 znakova.">
+                   <input type="text" name="" id="ime" size="30px" required="required">
                    <br>
                    <br>
                    <label for="adresa">Vaša adresa:</label> 
                    <br>
-                   <input type="text" name="" id="adresa" size="30px" required="required" title="Unesite adresu
-                   koristeci samo slova i brojeve">
+                   <input type="text" name="" id="adresa" size="30px" required="required">
                    <br>
                    <br>
                    <label for="telefon">Vaš kontakt telefon:</label> 
                    <br>
-                   <input type="tel" name="" id="telefon" size="30px" pattern="^[0-9]{9,10}$" title="Molimo Vas unosite isključivo brojeve, 
-                   i to sa najmanje 9 a najviše 10 cifara." required="required">
+                   <input type="tel" name="" id="telefon" size="30px" required="required">
                     <br>
                     <br>
                     <label for="grad">Opština:</label>
                     <br>
-                    <select name="" id="" required="required">
-                        <option value="">Izaberite opštinu</option>
-                        <option value="">Barajevo</option>
-                        <option value="">Voždovac</option>
-                        <option value="">Vračar</option>
-                        <option value="">Grocka</option>
-                        <option value="">Zemun</option>
-                        <option value="">Zvezdara</option>
-                        <option value="">Lazarevac</option>
-                        <option value="">Mladenovac</option>
-                        <option value="">Novi Beograd</option>
-                        <option value="">Obrenovac</option>
-                        <option value="">Palilula</option>
-                        <option value="">Rakovica</option>
-                        <option value="">Savski venac</option>
-                        <option value="">Sopot</option>
-                        <option value="">Stari grad</option>
-                        <option value="">Surčin</option>
-                        <option value="">Čukarica</option>
+                    <select name="" id="grad" required="required">
+                        <option value="" disabled selected>Izaberite opštinu</option>
+                        <option value="Barajevo">Barajevo</option>
+                        <option value="Voždovac">Voždovac</option>
+                        <option value="Vračar">Vračar</option>
+                        <option value="Grocka">Grocka</option>
+                        <option value="Zemun">Zemun</option>
+                        <option value="Zvezdara">Zvezdara</option>
+                        <option value="Lazarevac">Lazarevac</option>
+                        <option value="Mladenovac">Mladenovac</option>
+                        <option value="Novi Beograd">Novi Beograd</option>
+                        <option value="Obrenovac">Obrenovac</option>
+                        <option value="Palilula">Palilula</option>
+                        <option value="Rakovica">Rakovica</option>
+                        <option value="Savski venac">Savski venac</option>
+                        <option value="Sopot">Sopot</option>
+                        <option value="Stari grad">Stari grad</option>
+                        <option value="Surčin">Surčin</option>
+                        <option value="Čukarica">Čukarica</option>
                     </select>
                     <br>
                     <br>
@@ -97,10 +95,9 @@
     </a>
  
     <script src="../script/script.js"></script>
-    <!-- <script src="../script/forma-script.js"></script> -->
-    <script src="../script/forma-script-jquery.js"></script>
+    <script src="../script/forma-script.js"></script>
     <script src="../script/pocetna-click.js"></script>
-    
+ 
     
 </body>
 </html>
