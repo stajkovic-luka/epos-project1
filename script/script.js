@@ -1,14 +1,18 @@
-// davanje funkcionalnosti burger meniju
-const navSlider = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-linkovi');
+//burger meni
+const hamburger = document.querySelector(".burger");
+const navMeni = document.querySelector(".nav-linkovi");
 
-    burger.addEventListener("click", ()=>{
-        nav.classList.toggle('nav-active');
-    })
-}
+hamburger.addEventListener("click", ()=>{
+    hamburger.classList.toggle("active");
+    navMeni.classList.toggle("active");
 
-navSlider();
+})
+
+document.querySelectorAll(".nav-linkovi").forEach(n => n.addEventListener("click", () =>{
+    hamburger.classList.remove("active");
+    navMeni.classList.remove("active");
+}))
+
 
 //scroll-to-top dugme u uglu stranice
 const toTop = document.querySelector(".to-top");

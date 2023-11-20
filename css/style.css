@@ -13,9 +13,7 @@ body{
     background-color: #000000;
 }
 html,body{
-    overflow-x: hidden;
     scroll-behavior: smooth;
-    max-width: 100%;
 }
  
  
@@ -87,7 +85,9 @@ nav{
  
 .nav-linkovi{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
     width: 50%;
 }
  
@@ -114,6 +114,7 @@ nav{
 }
  
 /* burger meni za mobile-view */
+
 .burger{
     display: none;
     cursor: pointer;
@@ -129,7 +130,7 @@ nav{
 }
  
  
-/* responzivnost */
+/* responzivnost tablet */
 @media screen and (max-width:1024px){
  
        
@@ -140,7 +141,7 @@ nav{
         }
  
         .nav-linkovi{
-            width: 60%;
+            width: 80%;
         }
      
         #kontakt-media{
@@ -170,42 +171,47 @@ nav{
 
 }
 
-
+/* responzivnost telefon */
 @media screen and (max-width:768px){
  
-    
+    nav{
+        position: fixed; 
+        top: 0; 
+        width: 100%; 
+        
+    }
+
+    .main {
+        margin-top: 30px;
+      }
+
     .burger{
         display: block;
     }
-    body{
-        overflow-x: hidden;
-    }
+
     .nav-linkovi{
-        z-index: 3;
-        position: absolute;
-        right: 0px;
-        height: 50vh;
-        width: 60%;
-        top: 10vh;
-        display: flex;
+        position: fixed;
+        left: -100%;
+        height: 50%;
+        top: 70px;
+        gap: 0px;
         flex-direction: column;
-        align-items: center;
-        transform: translateX(100%);
-        transition: transform 0.2s ease-in;
-        background-color: black;
-        border-left:solid #f4bb00 1px;    
-        border-bottom:solid #f4bb00 1px;    
-        border-right:solid #f4bb00 1px;  
+        background-color: #000000;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
     }
-    
-    .nav-linkovi li{
-        opacity: 1;
-    }
-    .nav-active{
+
+    .nav-item{
+        margin: 16px 0;
         
-        transform: translateX(0%);
     }
- 
+
+    .nav-linkovi.active{
+        left: 0;
+        border: solid #f4bb00 1px;
+    }
+
     #forma{
         max-width: 100%;
     }
@@ -588,16 +594,7 @@ button{
 }
 
 main{
-    /* background-color: #B4BDFF; */
     flex-grow: 1;
-}
-
-
-body{
-    min-height: 100vh;
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
 }
 
 #kontakt-h2{
