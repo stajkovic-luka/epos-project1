@@ -232,32 +232,33 @@ nav{
         padding: 20px 0;
     }
     
+    #problem{
+        max-width: 80%;
+    }
+
 }
 
 
 
 /* POCETNA */
-.cover{
-    overflow: hidden;
-}
- 
- 
- #mapa{
+
+
+#mapa{
     display: flex;
- 
+    
     align-items: center;
     flex-direction: column;
     padding-bottom: 75px;
     padding-left: 100px;
     padding-right: 100px;
 }
- 
+
 .mapa-naslov{
     align-self: center;
     margin-bottom: 20px;
     margin-top: 50px;
 }
- 
+
 #o-nama {
     display: flex;
     justify-content: center;
@@ -268,11 +269,14 @@ nav{
     width: 100%;
     padding:0 100px;
 }
- 
+
 #o-nama h2{
     padding-bottom: 20px;
 }
- 
+.cover{
+    overflow: hidden;
+}
+
 .cover::after{
     content: '';
     height: 100vh;
@@ -287,9 +291,9 @@ nav{
     transition: all 1000ms;
     z-index: 1;
     
- 
+    
 }
- 
+
 .cover:hover::after{
     filter: blur(0px);
     -webkit-filter: blur(0px);
